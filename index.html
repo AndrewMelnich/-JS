@@ -5,18 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .lessons__list{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .lessons__item{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+        .lessons__item-link{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="lesson__one">
-            <h1>Задание 1</h1>
-            <p class="lesson__one-text">Я в своем познании настолько преисполнился, что я как будто бы уже
-                сто триллионов миллиардов лет проживаю на триллионах и
-                триллионах таких же планет, как эта Земля.
-            </p>
-            <script src="./index.js"></script>
+        <div class="container">
+            <ul class="lessons__list">
+                <li class="lessons__item">
+                    <a href="./common_tasks/filter__str.html" class="lessons__item-link"> 
+                        <div class="text">1 Фильрация строки</div>
+                    </a>
+                </li>
+                <li class="lessons__item">
+                    <a href="./common_tasks/choice.js" class="lessons__item-link"> 
+                        <div class="text">2 Выборка объекта</div>
+                    </a>
+                </li>
+                <li class="lessons__item">
+                    <a href="./common_tasks/string_parsing.js" class="lessons__item-link"> 
+                        <div class="text">3 Анализ строки</div>
+                    </a>
+                </li>
+                <li class="lessons__item">
+                    <a href="./common_tasks/array_filtering.js" class="lessons__item-link"> 
+                        <div class="text">4 Фильтрация массива</div>
+                    </a>
+                </li>
+                <li class="lessons__item">
+                    <a href="./dom/slider/slider.html" class="lessons__item-link"> 
+                        <div class="text">5 Простой слайдер</div>
+                    </a>
+                </li>
+                <li class="lessons__item">
+                    <a href="./dom/modal/modal.html" class="lessons__item-link"> 
+                        <div class="text">6 Модальное окно</div>
+                    </a>
+                </li>
+                <li class="lessons__item">
+                    <a href="./dom/blocks/blocks.html" class="lessons__item-link"> 
+                        <div class="text">7 Создание и работа с DOM</div>
+                    </a>
+                </li>
+            </ul>
         </div>
-        
     </div>
     
 </body>

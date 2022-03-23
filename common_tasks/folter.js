@@ -28,3 +28,5 @@ const arr = ['6,3', '2012', '-100', '0,2', '7', '3', '5', '10', '11', '-1', '2',
 let result = arr.filter(elem => elem > 0 && elem < 10);
 
 console.log(result);
+
+
